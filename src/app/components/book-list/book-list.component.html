@@ -1,0 +1,50 @@
+<div class="container">
+  <hr>
+  <div class="row top30">
+    <div class="col">
+      <h6>
+          Below is the list of books available in our library
+      </h6>
+    </div>
+  </div>
+  <div class="row top10">
+    <div class="col">
+      <table class="table table-sm table-hover">
+        <thead class="thead-light">
+          <th scope="col">Title</th>
+          <th>Publisher</th>
+          <th>Edition</th>
+          <th>Year</th>
+          <th>Price</th>
+          <th>ISBN</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>African Folktales</td>
+            <td>Pearson</td>
+            <td>1</td>
+            <td>1836</td>
+            <td>110.44</td>
+            <td>34234234243</td>
+          </tr>
+          <tr>
+            <td>How God Fix Jonah</td>
+            <td>Random House</td>
+            <td>1</td>
+            <td>1987</td>
+            <td>220.55</td>
+            <td>56456344545</td>
+          </tr>
+          <tr *ngFor="let book of booksList">
+            <td>{{book.Title}}</td>
+            <td>{{book.Publisher}}</td>
+            <td>{{book.Edition}}</td>
+            <td>{{book.Year}}</td>
+            <td>{{book.Price}}</td>
+            <td>{{book.ISBN}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>  
+</div>
